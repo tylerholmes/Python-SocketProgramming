@@ -2,7 +2,7 @@ import socket
 
 def main():
     host = "localhost"
-    port = 5000
+    port = 8080
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((host, port))
     while True:
