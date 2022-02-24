@@ -9,7 +9,7 @@ def main():
         message = input("Enter message")
         sock.sendall(message)
         echo = sock.recv(1024)
-        print("Rever echo: {echo[::-1]}")
+        print("Reverse echo from server: {echo}")
         if echo == "dne":
             print ("dne")
             return False
